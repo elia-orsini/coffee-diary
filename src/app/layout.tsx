@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import Menu from "@/components/menu/Menu";
 
 export const metadata: Metadata = {
-  title: "Coffee Letterboxd",
-  description: "Coffee Letterboxd",
+  title: "Coffee Diary",
+  description: "Coffee Diary",
 };
 
 export default function RootLayout({

@@ -15,7 +15,7 @@ export default function Menu() {
   return (
     <div className="flex flex-row p-4">
       <Link href={"/"} className="mr-10 sm:mr-20 sm:text-xl">
-        cafes letterboxd
+        coffee diary
       </Link>
       <div className="my-auto flex flex-row gap-x-5 align-middle">
         <Link href={"/cafes"}>cafes</Link>
