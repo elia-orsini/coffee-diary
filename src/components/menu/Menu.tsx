@@ -1,7 +1,7 @@
 "use client";
 
+import { signOutAction } from "@/app/actions";
 import getCurrentUser from "@/utils/getCurrentUser";
-import signOut from "@/utils/signOut";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -23,8 +23,10 @@ export default function Menu() {
         {user && <Link href={"/diary"}>diary</Link>}
       </div>
       <div className="my-auto ml-auto flex flex-row gap-x-4 align-middle">
-        <p className="hidden sm:block">{user?.email && user.email.split("@")[0]}</p>
-        {user && <button onClick={() => signOut()}>out</button>}
+        <p className="hidden sm:block">
+          {user?.email && user.email.split("@")[0]}
+        </p>
+        <form>{user && <button formAction={signOutAction}>out</button>}</form>
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import getDiaryEntries from "@/utils/getDiaryEntries";
 import AddDiaryEntry from "@/components/diary/AddDiaryEntry";
 import DiaryEntry from "@/components/diary/DiaryEntry";
+import Menu from "@/components/menu/Menu";
 
 const Home: NextPage = () => {
   const [diaryEntries, setDiaryEntries] = useState<any>([]);
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
 
   return (
     <div className="flex min-h-screen w-full flex-col">
+      <Menu />
       {showAddWidget && (
         <AddDiaryEntry
           setShowAddWidget={setShowAddWidget}

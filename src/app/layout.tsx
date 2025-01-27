@@ -15,8 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased`}>
-        <Menu />
-
         <div className="bg-transparent">{children}</div>
       </body>
     </html>

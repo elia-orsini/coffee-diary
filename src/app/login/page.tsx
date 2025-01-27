@@ -1,5 +1,6 @@
 "use client";
 
+import Menu from "@/components/menu/Menu";
 import { login, signup } from "./actions";
 import { useSearchParams } from "next/navigation";
 
@@ -7,7 +8,8 @@ export default function LoginPage() {
   const searchParams = useSearchParams();
 
   return (
-    <div className="flex min-h-[80vh] w-full flex-col">
+    <div className="flex flex-col min-h-[80vh] w-full flex-col">
+      <Menu />
       <form className="m-auto flex w-1/5 flex-col">
         <label htmlFor="email">Email:</label>
         <input
