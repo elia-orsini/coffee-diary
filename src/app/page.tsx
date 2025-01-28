@@ -2,9 +2,9 @@ import Menu from "@/components/menu/Menu";
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex h-screen flex-col">
       <Menu />
-      <p className="m-auto text-2xl">hi</p>
+      <p className="m-auto text-2xl">hi, welcome to coffee diary</p>
     </div>
   );
 }
